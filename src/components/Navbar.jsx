@@ -15,7 +15,7 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="p-4">
+      <header className="p-4 fixed top-0 z-50 w-full bg-black/90  shadow-2xl">
         <nav className="flex justify-between md:justify-around items-center">
           <h1 className="font-bold text-2xl">Pushkar</h1>
           <ul className="hidden md:flex md:gap-5 lg:gap-10 xl:gap-12">
@@ -40,7 +40,7 @@ export default function Navbar() {
           </a>
 
           <button
-          className="lg:hidden text-purple-500"
+          className="md:hidden text-purple-500"
           onClick={() => setIsOpen((prev) => !prev)}
           aria-label="Toggle navigation"
         >
