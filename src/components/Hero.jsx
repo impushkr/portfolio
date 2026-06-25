@@ -9,7 +9,7 @@ export default function Hero() {
     <>
       {/* For Desktop */}
       <section>
-        <div className="hidden md:block min-w-full h-[50vh] md:h-[33vh] lg:h-[30vh] xl:h-[60vh] overflow-hidden relative mt-18 ">
+        <div className="hidden md:block min-w-full md:h-[35vh] lg:h-[34vh] xl:h-[60vh] overflow-hidden relative mt-18 ">
           <img
             src="src/assets/Hero.png"
             alt="Hero"
@@ -20,7 +20,7 @@ export default function Hero() {
             alt="My Picture"
             className="hidden md:block absolute right-18 lg:right-30 xl:right-50 bottom-0 h-[30vh] lg:h-[30vh] xl:h-[60vh]"
           />
-          <div className="absolute overflow-hidden items-start bottom-3 lg:bottom- mx-3 md:left-5 lg:left-8 flex flex-col gap-2 lg:gap-3  ">
+          <div className="absolute overflow-hidden items-start bottom-5 lg:bottom-7 mx-3 md:left-5 lg:left-8 flex flex-col gap-2 lg:gap-3  ">
             <div className="inline-flex gap-2 items-center justify-center px-2 py-1 border border-white text-xs xl:text-sm rounded-3xl">
               <span className="w-2 h-2 rounded-full bg-green-500"></span>
               <p>Frontend Developer</p>
@@ -63,7 +63,7 @@ export default function Hero() {
         
 
         {/*For Mobile  */}
-        <div className="overflow-hidden items-start mx-3 flex flex-col gap-2 mt-[10vh] md:hidden">
+        <div className="overflow-hidden items-start mx-3 flex flex-col gap-2 mt-[10vh] pb-5 md:hidden">
             <div className="inline-flex gap-2 items-center justify-center px-2 py-1 border border-white text-xs rounded-3xl">
               <span className="w-2 h-2 rounded-full bg-green-500"></span>
               <p>Frontend Developer</p>
