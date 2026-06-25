@@ -5,10 +5,10 @@ import App from './App.jsx'
 import Navbar from './components/Navbar.jsx'
 import About from './components/About.jsx'
 import Skills from "./components/Skills";
-import Projects from "./components/Projects";
+import Projects from "./components/ProjectCard.jsx";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Home from "./components/Home.jsx"
+import Home from "./pages/Home.jsx"
 
 import {createBrowserRouter,RouterProvider} from "react-router-dom"
 

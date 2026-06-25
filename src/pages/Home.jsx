@@ -1,6 +1,8 @@
-import Hero from "./Hero";
-import { GraduationCap, Code2, FolderKanban, Rocket } from "lucide-react";
+import Hero from "../components/Hero";
+import { GraduationCap, Code2, FolderKanban, Rocket, } from "lucide-react";
 import { FaCode } from "react-icons/fa";
+import ProjectCard from "../components/ProjectCard";
+
 
 export default function Home() {
 
@@ -94,10 +96,10 @@ export default function Home() {
         })}
       </section>
 
-      <section className="pt-6 px-4 xl:text-center">
-        <h1 className="text-xl lg:text-2xl font-bold">Skills & Technologies</h1>
+      <section className="mt-10 px-4 text-center">
+        <h1 className="text-lg lg:text-xl font-bold">Skills & Technologies</h1>
 
-        <div className="flex flex-wrap gap-2 xl:gap-4 justify-evenly xl:justify-center py-4 ">
+        <div className="flex flex-wrap gap-2 justify-evenly xl:justify-center py-4 ">
             {
             technologies.map((item)=>(
                 <div className="flex flex-col gap-2 bg-gray border border-white/10 rounded-sm py-4 w-[20vw] md:w-[11vw] xl:w-[8vw] items-center">
@@ -110,6 +112,7 @@ export default function Home() {
 
       </section>
 
+      <ProjectCard/>
       
     </>
   );

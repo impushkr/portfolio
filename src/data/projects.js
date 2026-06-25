@@ -9,7 +9,7 @@ export const projects = [
     features: [
       "Multi-page website (Home, Programs, Trainers, Gallery, Contact)",
       "Custom domain & Vercel deployment",
-      "Responsive design for all devices",
+      "Responsive design",
       "Sitemap & Google Search Console setup",
       "Direct client collaboration",
     ],
