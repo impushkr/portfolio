@@ -94,8 +94,8 @@ export default function Home() {
         })}
       </section>
 
-      <section className="py-6 px-4 xl:text-center">
-        <h1 className="text-2xl font-bold">Skills & Technologies</h1>
+      <section className="pt-6 px-4 xl:text-center">
+        <h1 className="text-xl lg:text-2xl font-bold">Skills & Technologies</h1>
 
         <div className="flex flex-wrap gap-2 xl:gap-4 justify-evenly xl:justify-center py-4 ">
             {
@@ -109,6 +109,8 @@ export default function Home() {
         </div>
 
       </section>
+
+      
     </>
   );
 }
