@@ -3,10 +3,10 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import Navbar from './components/Navbar.jsx'
-import About from './components/About.jsx'
-import Skills from "./components/Skills";
+import About from './pages/About.jsx'
+import Skills from "./pages/Skills";
 import Projects from "./components/ProjectCard.jsx";
-import Contact from "./components/Contact";
+import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import Home from "./pages/Home.jsx"
 

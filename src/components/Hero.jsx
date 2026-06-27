@@ -53,11 +53,11 @@ export default function Hero() {
                 Contact Me <FiMail className="size-5 md:size-4 lg:size-5 " />
               </a>
             </div>
-            <div className="flex justify-center gap-5 pl-3 xl:w-[12vw] mt-2 lg:pl-7 xl:pr-14">
+            {/* <div className="flex justify-center gap-5 pl-3 xl:w-[12vw] mt-2 lg:pl-7 xl:pr-14">
               <a href="https:/wa.me/+916239799932"><FaWhatsapp className="md:size-4 xl:size-5"/></a>
               <a href="https://linkedin.com/in/impushkar"><FaLinkedin className="size-5 md:size-4 xl:size-5"/></a>
               <a href="https://github.com/impushkr"><FaGithub className="md:size-4 xl:size-5"/></a>
-            </div>
+            </div> */}
           </div>
         </div>
         
@@ -96,11 +96,11 @@ export default function Hero() {
                 Contact Me <FiMail className="size-5" />
               </a>
             </div>
-            <div className="flex justify-center gap-5 pl-3 w-[90vw] mt-2">
+            {/* <div className="flex justify-center gap-5 pl-3 w-[90vw] mt-2">
               <a href="https:/wa.me/+916239799932"><FaWhatsapp className="size-5"/></a>
               <a href="https://linkedin.com/in/impushkar"><FaLinkedin className="size-5"/></a>
               <a href="https://github.com/impushkr"><FaGithub className="size-5"/></a>
-            </div>
+            </div> */}
           </div>
       </section>
     </>

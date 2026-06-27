@@ -17,7 +17,10 @@ export default function Navbar() {
     <>
       <header className="p-4 fixed top-0 z-50 w-full bg-black/90  shadow-2xl">
         <nav className="flex justify-between md:justify-around items-center">
-          <h1 className="font-bold text-2xl">Pushkar</h1>
+          <h2 className="text-2xl font-bold">
+              Pushkar
+              <span className="text-purple-500">.</span>
+            </h2>
           <ul className="hidden md:flex md:gap-5 lg:gap-10 xl:gap-12">
             {navLinks.map((link) => (
               <li key={link.path}>

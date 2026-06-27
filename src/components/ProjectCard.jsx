@@ -4,17 +4,18 @@ import { FiExternalLink } from "react-icons/fi";
 
 const ProjectCard = () => {
   return (
-    <section className="pt-6 px-4 ">
-        <h1 className="text-lg lg:text-xl font-bold">My Projects</h1>
+    <section className="pt-6 px-4 text-center">
+        <h1 className="text-lg lg:text-xl font-bold ">My Projects</h1>
       <div className="overflow-x-auto">
-        <div className="flex gap-4 w-max py-2 text-start">
+        <div className="flex gap-4 w-max py-2 text-start px-2 pb-5">
         {projects.map((project) => (
         <div
           key={project.id}
-          className=" border border-white/10 rounded-3xl flex flex-col justify-around w-[80vw] md:w-[40vw] lg:w-[30vw] xl:w-[20vw] "
+          className="shadow shadow-violet-300/50 border border-white/10 rounded-2xl flex flex-col justify-around w-[80vw] md:w-[40vw] lg:w-[30vw] xl:w-[20vw] "
         >
-          <div className="p-4">
-            <span className="rounded-full bg-violet-500/10 px-3 py-1 text-xs text-violet-400">
+          <div className="p-4 flex flex-col justify-between">
+            <div className="">
+              <span className="rounded-full bg-violet-500/10 px-3 py-1 text-xs text-violet-400">
               {project.type}
             </span>
 
@@ -47,6 +48,7 @@ const ProjectCard = () => {
                 </li>
               ))}
             </ul>
+            </div>
 
             {/* Buttons */}
             <div className="mt-6 flex gap-3">
@@ -56,7 +58,7 @@ const ProjectCard = () => {
                 rel="noreferrer"
                 className="flex items-center gap-2 rounded-lg bg-violet-600 px-4 py-2 text-sm font-medium text-white transition hover:bg-violet-700"
               >
-                <FiExternalLink />
+                <FiExternalLink  />
                 Live Visit
               </a>
 
@@ -64,7 +66,7 @@ const ProjectCard = () => {
                 href={project.githubUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center gap-2 rounded-lg border border-white/10 px-4 py-2 text-sm text-white transition hover:border-violet-500/40"
+                className="flex items-center gap-2 rounded-lg border border-white/10 px-4 py-2 text-sm font-medium text-white transition hover:border-violet-500/40"
               >
                 <FaGithub />
                 Code
