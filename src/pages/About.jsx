@@ -73,26 +73,30 @@ export default function About() {
           /> */}
           <div className="hidden md:block absolute right-5 lg:right-10 xl:right-60 bottom-20">
             <img
-            src="src/assets/My.png"
-            alt="My Picture"
-            className=" h-[35vh] xl:h-[50vh] relative"
-          />
-          <div className="grid grid-cols-2 md:grid-cols-4 rounded-2xl border border-white/10 bg-[#0B1020] overflow-hidden absolute md:bottom-[-4vh] lg:bottom-[-1vw] xl:bottom-[-4vh] p-4 right-0 lg:left-8 xl:left-5 md:w-[50vw] lg:w-auto">
-            {stats.map((item, index) => (
-              <div
-                key={item.id}
-                className={`p-2 text-center ${
-                  index !== stats.length - 1 ? "border-r border-white/10" : ""
-                }`}
-              >
-                <h2 className="text-xl font-bold text-white">{item.number}</h2>
+              src="src/assets/My.png"
+              alt="My Picture"
+              className=" h-[35vh] xl:h-[50vh] relative"
+            />
+            <div className="grid grid-cols-2 md:grid-cols-4 rounded-2xl border border-white/10 bg-[#0B1020] overflow-hidden absolute md:bottom-[-4vh] lg:bottom-[-1vw] xl:bottom-[-4vh] p-4 right-0 lg:left-8 xl:left-5 md:w-[50vw] lg:w-auto">
+              {stats.map((item, index) => (
+                <div
+                  key={item.id}
+                  className={`p-2 text-center ${
+                    index !== stats.length - 1 ? "border-r border-white/10" : ""
+                  }`}
+                >
+                  <h2 className="text-xl font-bold text-white">
+                    {item.number}
+                  </h2>
 
-                <p className="mt-3 text-gray-300 text-sm font-medium">{item.title}</p>
+                  <p className="mt-3 text-gray-300 text-sm font-medium">
+                    {item.title}
+                  </p>
 
-                <p className="text-gray-500 text-xs">{item.subtitle}</p>
-              </div>
-            ))}
-          </div>
+                  <p className="text-gray-500 text-xs">{item.subtitle}</p>
+                </div>
+              ))}
+            </div>
           </div>
           <div className="md:absolute overflow-hidden items-start top-5 lg:top-20 xl:top-5 mx-3 md:left-5 lg:left-8 flex flex-col gap-2 lg:gap-3">
             <div className="flex items-center space-x-1 px-2 py-1 shadow  md:text-xs xl:text-sm rounded-3xl">
