@@ -112,7 +112,10 @@ export default function Home() {
 
       </section>
 
+      <section className="pt-6 px-4 text-center">
+        <h1 className="text-lg lg:text-xl font-bold ">My Projects</h1>
       <ProjectCard/>
+      </section>
       
     </>
   );

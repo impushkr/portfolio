@@ -5,7 +5,7 @@ import App from './App.jsx'
 import Navbar from './components/Navbar.jsx'
 import About from './pages/About.jsx'
 import Skills from "./pages/Skills";
-import Projects from "./components/ProjectCard.jsx";
+import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import Home from "./pages/Home.jsx"

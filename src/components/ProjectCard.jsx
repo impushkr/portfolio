@@ -4,8 +4,6 @@ import { FiExternalLink } from "react-icons/fi";
 
 const ProjectCard = () => {
   return (
-    <section className="pt-6 px-4 text-center">
-        <h1 className="text-lg lg:text-xl font-bold ">My Projects</h1>
       <div className="overflow-x-auto">
         <div className="flex gap-4 w-max py-2 text-start px-2 pb-5">
         {projects.map((project) => (
@@ -77,7 +75,6 @@ const ProjectCard = () => {
       ))}
       </div>
       </div>
-    </section>
   );
 };
 
