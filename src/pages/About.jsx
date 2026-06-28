@@ -24,9 +24,9 @@ export default function About() {
     },
     {
       id: 4,
-      icon: Rocket,
-      title: "Always Learning",
-      subtitle: "Exploring backend",
+      icon: Briefcase,
+      title: "Experience",
+      subtitle: "Fresher",
     },
   ];
 
@@ -119,11 +119,11 @@ export default function About() {
               CSS and enjoy turning ideas into real-world products.
             </h3>
             <h3 className="md:w-[46vw] lg:w-[40vw] text-gray-400 md:text-xs lg:text-sm xl:text-base">
-              I'm currently pursulng my BCA and constantly learning new
+              I'm currently pursuing my BCA and constantly learning new
               technologies to grow as a Full Stack Developer.
             </h3>
 
-            <div className="py-4 rounded-2xl flex flex-wrap gap-2 flex-col md:flex-row md:justify-evenly w-full md:w-[52vw] lg:w-[40vw] xl:w-[30vw]">
+            <div className="py-4 rounded-2xl flex flex-wrap gap-2 flex-col lg:flex-row lg:justify-evenly w-full md:w-[40vw] lg:w-[40vw] xl:w-[30vw]">
               {highlights.map((item) => {
                 const Icon = item.icon;
 
@@ -132,13 +132,13 @@ export default function About() {
                     key={item.id}
                     className="flex gap-4 w-auto p-2 md:p-0 md:w-[25vw] lg:w-[19vw] xl:w-[13vw]"
                   >
-                    <div className="w-12 h-12 rounded-xl bg-violet-500/15 flex items-center justify-center">
-                      <Icon size={22} className="text-violet-400" />
+                    <div className="w-12 h-12 md:w-8 md:h-8 lg:w-12 lg:h-12 rounded-xl bg-violet-500/15 flex items-center justify-center">
+                      <Icon className="text-violet-400 md:size-4 lg:size-7" />
                     </div>
 
                     <div>
-                      <h3 className="font-semibold">{item.title}</h3>
-                      <p className="text-sm text-gray-400">{item.subtitle}</p>
+                      <h3 className="font-semibold md:text-sm lg:text-base">{item.title}</h3>
+                      <p className="text-sm text-gray-400 md:text-xs lg:text-sm">{item.subtitle}</p>
                     </div>
                   </div>
                 );

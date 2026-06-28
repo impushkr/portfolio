@@ -9,9 +9,9 @@ const ProjectCard = () => {
         {projects.map((project) => (
         <div
           key={project.id}
-          className="shadow shadow-violet-300/50 border border-white/10 rounded-2xl flex flex-col justify-around w-[80vw] md:w-[40vw] lg:w-[30vw] xl:w-[20vw] "
+          className="p-4 shadow shadow-violet-300/50 border border-white/10 rounded-2xl w-[80vw] md:w-[40vw] lg:w-[30vw] xl:w-[20vw] flex flex-col justify-between  xl:h-[50vh] "
         >
-          <div className="p-4 flex flex-col justify-between">
+          
             <div className="">
               <span className="rounded-full bg-violet-500/10 px-3 py-1 text-xs text-violet-400">
               {project.type}
@@ -70,7 +70,7 @@ const ProjectCard = () => {
                 Code
               </a>
             </div>
-          </div>
+
         </div>
       ))}
       </div>
