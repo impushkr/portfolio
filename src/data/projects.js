@@ -63,7 +63,7 @@ export const projects = [
       "Download CV functionality",
       "Smooth navigation and modern UI",
     ],
-    liveUrl: "https://portfolio-eight-lovat-40.vercel.app/",
+    liveUrl: "https://pushkarsingh-portfolio.vercel.app/",
     githubUrl: "https://github.com/impushkr/portfolio.git",
   },
 
