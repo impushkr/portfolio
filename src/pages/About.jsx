@@ -33,7 +33,7 @@ export default function About() {
   const stats = [
     {
       id: 1,
-      number: "4+",
+      number: "10+",
       title: "Projects",
       subtitle: "Completed",
     },

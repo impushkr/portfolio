@@ -75,7 +75,7 @@ export default function Navbar() {
 
             <a
               href="/Pushkar's Resume.pdf"
-              className="rounded-2xl px-4 py-3 text-lg font-semibold border border-purple-500 text-center flex gap-3 items-center"
+              className="rounded-2xl px-4 py-3 text-lg font-semibold animate-pulse border text-center flex gap-3 items-center"
             >
               Download CV <FiDownload />
             </a>
