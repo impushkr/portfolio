@@ -11,12 +11,12 @@ export default function Hero() {
       <section>
         <div className="hidden md:block min-w-full md:h-[35vh] lg:h-[34vh] xl:h-[60vh] overflow-hidden relative mt-18 ">
           <img
-            src="src/assets/Hero.png"
+            src="/Hero.png"
             alt="Hero"
             className="hidden md:block absolute w-full h-full object-cover"
           />
           <img
-            src="src/assets/My.png"
+            src="/My.png"
             alt="My Picture"
             className="hidden md:block absolute right-18 lg:right-30 xl:right-50 bottom-0 h-[30vh] lg:h-[30vh] xl:h-[60vh]"
           />

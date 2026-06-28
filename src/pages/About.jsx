@@ -62,7 +62,7 @@ export default function About() {
       <section>
         <div className="block min-w-full md:h-[45vh] xl:h-[60vh] overflow-hidden relative mt-18 ">
           <img
-            src="src/assets/Hero.png"
+            src="/Hero.png"
             alt="Hero"
             className="hidden md:block absolute w-full h-full object-cover"
           />
@@ -73,7 +73,7 @@ export default function About() {
           /> */}
           <div className="hidden md:block absolute right-5 lg:right-10 xl:right-60 bottom-20">
             <img
-              src="src/assets/My.png"
+              src="/My.png"
               alt="My Picture"
               className=" h-[35vh] xl:h-[50vh] relative"
             />

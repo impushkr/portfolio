@@ -1,35 +1,35 @@
 export default function Skills() {
     const technologies=[
     {
-        img:"src/assets/HTML.png",
+        img:"/HTML.png",
         title:"HTML"
     },
     {
-        img:"src/assets/CSS.png",
+        img:"/CSS.png",
         title:"CSS"
     },
     {
-        img:"src/assets/JS.png",
+        img:"/JS.png",
         title:"JavaScript"
     },
     {
-        img:"src/assets/React.png",
+        img:"/React.png",
         title:"React.js"
     },
     {
-        img:"src/assets/Tailwind.png",
+        img:"/Tailwind.png",
         title:"Tailwind CSS"
     },
     {
-        img:"src/assets/Git.png",
+        img:"/Git.png",
         title:"Git"
     },
     {
-        img:"src/assets/GitHub.png",
+        img:"/GitHub.png",
         title:"GitHub"
     },
     {
-        img:"src/assets/VS.png",
+        img:"/VS.png",
         title:"VS Code"
     }
   ]
