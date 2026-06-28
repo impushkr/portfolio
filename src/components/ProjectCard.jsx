@@ -18,7 +18,7 @@ const ProjectCard = () => {
             </span>
 
             <h3 className="mt-4 text-xl font-bold text-white">
-              {project.title}
+              {project.title.length>20 ? project.title.slice(0,20)+"...":project.title}
             </h3>
 
             <p className="mt-3 text-sm leading-6 text-gray-400">
@@ -50,7 +50,7 @@ const ProjectCard = () => {
 
             {/* Buttons */}
             <div className="mt-6 flex gap-3">
-              <a
+              { project.liveUrl!== "#" ? (<a
                 href={project.liveUrl}
                 target="_blank"
                 rel="noreferrer"
@@ -58,7 +58,7 @@ const ProjectCard = () => {
               >
                 <FiExternalLink  />
                 Live Visit
-              </a>
+              </a>):null}
 
               <a
                 href={project.githubUrl}
