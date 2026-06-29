@@ -1,6 +1,15 @@
 import { FaWhatsapp, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const links = [
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Skills", path: "/skills" },
+    { name: "Projects", path: "/projects" },
+    { name: "Contact", path: "/contact" },
+  ];
+
   return (
     <footer className="border-t border-white/10 mt-10 ">
       <div className="max-w-7xl mx-auto px-6 py-12">
@@ -21,35 +30,13 @@ const Footer = () => {
 
           {/* Navigation */}
           <ul className="flex flex-wrap justify-center gap-8 text-gray-300">
-            <li>
-              <a href="/" className="hover:text-purple-400 transition">
-                Home
-              </a>
-            </li>
-
-            <li>
-              <a href="/about" className="hover:text-purple-400 transition">
-                About
-              </a>
-            </li>
-
-            <li>
-              <a href="/skills" className="hover:text-purple-400 transition">
-                Skills
-              </a>
-            </li>
-
-            <li>
-              <a href="/projects" className="hover:text-purple-400 transition">
-                Projects
-              </a>
-            </li>
-
-            <li>
-              <a href="/contact" className="hover:text-purple-400 transition">
-                Contact
-              </a>
-            </li>
+            {links.map((item) => (
+              <Link to={item.path}>
+                <li className="hover:text-purple-400 transition">
+                  {item.name}
+                </li>
+              </Link>
+            ))}
           </ul>
 
           {/* Socials */}
