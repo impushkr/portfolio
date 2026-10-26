@@ -10,7 +10,7 @@ export default function Home() {
     {
       id: 1,
       icon: GraduationCap,
-      title: "BCA (Pursuing)",
+      title: "BCA",
       subtitle: "2023 - 2026",
       description: "Lyallpur Khalsa College, GNDU University",
     },

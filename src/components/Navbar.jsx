@@ -38,7 +38,7 @@ export default function Navbar() {
             ))}
           </ul>
           <a
-            href="/Pushkar's Resume.pdf"
+            href="/Pushkar's CV.pdf"
             className="hidden border border-purple-500/40 px-5 py-2 rounded-lg md:flex items-center gap-2 hover:scale-95"
           >
             Download CV <FiDownload />
