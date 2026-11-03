@@ -40,19 +40,22 @@ export default function Hero() {
               using React.js , Tailwind CSS and modern frontend technologies.
             </h3>
 
-            <div className="flex justify-center items-center gap-4 mt-2 ">
-              <Link to={"projects"}>
-                <button className="rounded-2xl font-semibold bg-gradient-to-r from-purple-700 to-blue-500 text-center flex justify-center gap-3 items-center px-3 py-3 xl:py-2 text-xs lg:text-base xl:text-lg w-[15vw] xl:w-[11vw]">
-                  View My Work »
-                </button>
-              </Link>
-              <a
-                href="mailto:pushkar-singh@zohomail.in"
-                className="rounded-2xl font-semibold border border-purple-500 text-center flex justify-center gap-3 items-center px-3 py-3 lg:py-3 xl:py-2 text-xs lg:text-base xl:text-lg w-[16vw] lg:w-[15vw] xl:w-[11vw]"
-              >
-                Contact Me <FiMail className="size-5 md:size-4 lg:size-5 " />
-              </a>
-            </div>
+            <div className="mt-2 flex flex-wrap items-center justify-center gap-3 sm:gap-4">
+  <Link
+    to="projects"
+    className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-2xl bg-gradient-to-r from-purple-700 to-blue-500 px-5 py-3 text-sm font-semibold text-white transition hover:opacity-90 sm:px-6 lg:text-base xl:text-lg"
+  >
+    View My Work »
+  </Link>
+
+  <a
+    href="mailto:pushkar-singh@zohomail.in"
+    className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-2xl border border-purple-500 px-5 py-3 text-sm font-semibold text-white transition hover:bg-purple-500/10 sm:px-6 lg:text-base xl:text-lg"
+  >
+    Contact Me
+    <FiMail className="size-4 lg:size-5" />
+  </a>
+</div>
             {/* <div className="flex justify-center gap-5 pl-3 xl:w-[12vw] mt-2 lg:pl-7 xl:pr-14">
               <a href="https:/wa.me/+916239799932"><FaWhatsapp className="md:size-4 xl:size-5"/></a>
               <a href="https://linkedin.com/in/impushkar"><FaLinkedin className="size-5 md:size-4 xl:size-5"/></a>
