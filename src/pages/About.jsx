@@ -59,119 +59,87 @@ export default function About() {
 
   return (
     <>
-      <section>
-        <div className="block min-w-full md:h-[45vh] xl:h-[60vh] overflow-hidden relative mt-18 ">
-          <img
-            src="/Hero.png"
-            alt="Hero"
-            className="hidden md:block absolute w-full h-full object-cover"
-          />
-          {/* <img
-            src="src/assets/My.png"
-            alt="My Picture"
-            className="hidden md:block absolute right-5 lg:right-10 xl:right-60 bottom-20 h-[35vh] xl:h-[50vh]"
-          /> */}
-          <div className="hidden md:block absolute right-5 lg:right-10 xl:right-60 bottom-20">
-            <img
-              src="/My.png"
-              alt="My Picture"
-              className=" h-[35vh] xl:h-[50vh] relative"
-            />
-            <div className="grid grid-cols-2 md:grid-cols-4 rounded-2xl border border-white/10 bg-[#0B1020] overflow-hidden absolute md:bottom-[-4vh] lg:bottom-[-1vw] xl:bottom-[-4vh] p-4 right-0 lg:left-8 xl:left-5 md:w-[50vw] lg:w-auto">
-              {stats.map((item, index) => (
-                <div
-                  key={item.id}
-                  className={`p-2 text-center ${
-                    index !== stats.length - 1 ? "border-r border-white/10" : ""
-                  }`}
-                >
-                  <h2 className="text-xl font-bold text-white">
-                    {item.number}
-                  </h2>
+      <section className="relative mt-20 overflow-hidden py-12 md:py-16 lg:py-20">
+  {/* Background (md+ only) */}
+  <img
+    src="/Hero.png"
+    alt=""
+    aria-hidden="true"
+    className="absolute inset-0 hidden h-full w-full object-cover md:block"
+  />
+  <div className="absolute inset-0 hidden bg-gradient-to-r from-black/70 via-black/40 to-black/10 md:block" />
 
-                  <p className="mt-3 text-gray-300 text-sm font-medium">
-                    {item.title}
-                  </p>
+  <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-10 px-4 md:grid-cols-2 md:px-6 lg:px-10">
+    {/* LEFT: Text */}
+    <div className="flex flex-col items-start gap-3 lg:gap-4">
+      <div className="inline-flex items-center gap-2 rounded-3xl px-3 py-1 shadow md:text-xs xl:text-sm">
+        <span className="h-2 w-2 rounded-full bg-purple-400" />
+        <span className="font-medium text-purple-400">Get To Know More</span>
+      </div>
 
-                  <p className="text-gray-500 text-xs">{item.subtitle}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="md:absolute overflow-hidden items-start top-5 lg:top-20 xl:top-5 mx-3 md:left-5 lg:left-8 flex flex-col gap-2 lg:gap-3">
-            <div className="flex items-center space-x-1 px-2 py-1 shadow  md:text-xs xl:text-sm rounded-3xl">
-              <span className="w-2 h-2 rounded-full bg-purple-400"></span>
-              <span className="text-purple-400 font-medium">
-                Get To Know More
-              </span>
-            </div>
-            <div className="space-x-4">
-              <span className="text-5xl md:text-4xl lg:text-5xl xl:text-7xl font-bold">
-                About
-              </span>
-              <span className="text-5xl md:text-4xl lg:text-5xl xl:text-7xl font-bold bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">
-                Me
-              </span>
-            </div>
-            <h3 className="md:w-[46vw] lg:w-[40vw] text-gray-400 md:text-xs lg:text-sm xl:text-base">
-              I'm a Frontend Developer who loves building clean, modern, and
-              responsive web applications. I specialize in React.js and Tailwind
-              CSS and enjoy turning ideas into real-world products.
-            </h3>
-            <h3 className="md:w-[46vw] lg:w-[40vw] text-gray-400 md:text-xs lg:text-sm xl:text-base">
-              I'm currently pursuing my BCA and constantly learning new
-              technologies to grow as a Full Stack Developer.
-            </h3>
+      <h2 className="flex flex-wrap gap-x-4 text-5xl font-bold md:text-4xl lg:text-5xl xl:text-7xl">
+        <span>About</span>
+        <span className="bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text pb-1 leading-tight text-transparent">
+          Me
+        </span>
+      </h2>
 
-            <div className="py-4 rounded-2xl flex flex-wrap gap-2 flex-col lg:flex-row lg:justify-evenly w-full md:w-[40vw] lg:w-[40vw] xl:w-[30vw]">
-              {highlights.map((item) => {
-                const Icon = item.icon;
+      <p className="max-w-xl text-sm text-gray-300 lg:text-base">
+        I'm a Frontend Developer who loves building clean, modern, and
+        responsive web applications. I specialize in React.js and Tailwind
+        CSS and enjoy turning ideas into real-world products.
+      </p>
+      <p className="max-w-xl text-sm text-gray-300 lg:text-base">
+        I'm currently pursuing my BCA and constantly learning new
+        technologies to grow as a Full Stack Developer.
+      </p>
 
-                return (
-                  <div
-                    key={item.id}
-                    className="flex gap-4 w-auto p-2 md:p-0 md:w-[25vw] lg:w-[19vw] xl:w-[13vw]"
-                  >
-                    <div className="w-12 h-12 md:w-8 md:h-8 lg:w-12 lg:h-12 rounded-xl bg-violet-500/15 flex items-center justify-center">
-                      <Icon className="text-violet-400 md:size-4 lg:size-7" />
-                    </div>
-
-                    <div>
-                      <h3 className="font-semibold md:text-sm lg:text-base">{item.title}</h3>
-                      <p className="text-sm text-gray-400 md:text-xs lg:text-sm">{item.subtitle}</p>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-
-            <div className="w-full md:w-auto flex justify-center">
-              <Link to={"/contact"}>
-                <button className="rounded-2xl font-semibold bg-gradient-to-r from-purple-900 to-blue-500 text-center flex justify-center gap-3 items-center px-30 py-3 md:px-3 md:py-3 xl:py-2  md:text-xs lg:text-base xl:text-lg  md:w-[15vw] xl:w-[11vw]">
-                  Let's Connect »
-                </button>
-              </Link>
-            </div>
-          </div>
-
-          {/* <div className="grid grid-cols-2 md:grid-cols-4 rounded-2xl border border-white/10 bg-[#0B1020] overflow-hidden absolute right-40 bottom-10 p-4">
-            {stats.map((item, index) => (
-              <div
-                key={item.id}
-                className={`p-4 text-center ${
-                  index !== stats.length - 1 ? "border-r border-white/10" : ""
-                }`}
-              >
-                <h2 className="text-2xl font-bold text-white">{item.number}</h2>
-
-                <p className="mt-3 text-gray-300 font-medium">{item.title}</p>
-
-                <p className="text-gray-500">{item.subtitle}</p>
+      {/* Highlights */}
+      <div className="grid w-full max-w-xl grid-cols-1 gap-4 py-4 sm:grid-cols-2">
+        {highlights.map((item) => {
+          const Icon = item.icon;
+          return (
+            <div key={item.id} className="flex items-center gap-3">
+              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-violet-500/15 lg:h-12 lg:w-12">
+                <Icon className="size-5 text-violet-400 lg:size-6" />
               </div>
-            ))}
-          </div> */}
-        </div>
-      </section>
+              <div className="min-w-0">
+                <h3 className="text-sm font-semibold lg:text-base">{item.title}</h3>
+                <p className="text-xs text-gray-400 lg:text-sm">{item.subtitle}</p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      <Link
+        to="/contact"
+        className="inline-flex items-center justify-center whitespace-nowrap rounded-2xl bg-gradient-to-r from-purple-900 to-blue-500 px-6 py-3 text-sm font-semibold text-white transition hover:opacity-90 lg:text-base xl:text-lg"
+      >
+        Let's Connect »
+      </Link>
+    </div>
+
+    {/* RIGHT: Photo + Stats */}
+    <div className="flex flex-col items-center md:items-end">
+      <img
+        src="/My.png"
+        alt="Pushkar Singh"
+        className="hidden h-74 w-auto object-contain object-bottom md:block lg:h-95 xl:h-[26rem]]"
+      />
+
+      <div className="grid w-full max-w-md grid-cols-2 gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/10 lg:max-w-lg lg:grid-cols-4">
+        {stats.map((item) => (
+          <div key={item.id} className="bg-[#0B1020] p-4 text-center">
+            <h3 className="text-xl font-bold text-white">{item.number}</h3>
+            <p className="mt-2 text-sm font-medium text-gray-300">{item.title}</p>
+            <p className="text-xs text-gray-500">{item.subtitle}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
     </>
   );
 }

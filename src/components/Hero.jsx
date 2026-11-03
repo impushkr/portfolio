@@ -7,62 +7,74 @@ import { Link } from "react-router-dom";
 export default function Hero() {
   return (
     <>
-      {/* For Desktop */}
+      
       <section>
-        <div className="hidden md:block min-w-full md:h-[30vh] lg:h-[34vh] xl:h-[65vh] overflow-hidden relative mt-18 ">
-          <img
-            src="/Hero.png"
-            alt="Hero"
-            className="hidden md:block absolute w-full h-full object-cover"
-          />
-          <img
-            src="/My.png"
-            alt="My Picture"
-            className="hidden md:block absolute right-18 lg:right-30 xl:right-50 bottom-0 h-[30vh] lg:h-[30vh] xl:h-[60vh]"
-          />
-          <div className="absolute overflow-hidden items-start bottom-5 lg:bottom-7 mx-3 md:left-5 lg:left-8 flex flex-col gap-2 lg:gap-3  ">
-            <div className="inline-flex gap-2 items-center justify-center px-2 py-1 border border-white text-xs xl:text-sm rounded-3xl">
-              <span className="w-2 h-2 rounded-full bg-green-500"></span>
-              <p>Frontend Developer</p>
-            </div>
-            <div>
-              <h1 className="text-3xl lg:text-4xl xl:text-5xl font-semibold">Hi, I'm</h1>
-              <h1 className="text-4xl lg:text-5xl xl:text-7xl font-bold bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">
-                Pushkar Singh
-              </h1>
-            </div>
-            <h2 className="w-[40vw] text-lg md:text-base xl:text-lg font-semibold">
-              React.js Developer | Building Modern & Responsive Web Experiences
-            </h2>
+        {/* For Desktop */}
+        <section className="relative mt-20 hidden overflow-hidden md:block md:min-h-[420px] lg:min-h-[480px] xl:min-h-[65vh]">
+  {/* Background */}
+  <img
+    src="/Hero.png"
+    alt=""
+    aria-hidden="true"
+    className="absolute inset-0 h-full w-full object-cover"
+  />
 
-            <h3 className="w-[46vw] lg:w-[40vw] text-gray-400 text-xs lg:text-sm xl:text-base">
-              I build responsive, user-friendly, and performant web applications
-              using React.js , Tailwind CSS and modern frontend technologies.
-            </h3>
+  {/* Readability overlay */}
+  <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent" />
 
-            <div className="mt-2 flex flex-wrap items-center justify-center gap-3 sm:gap-4">
-  <Link
-    to="projects"
-    className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-2xl bg-gradient-to-r from-purple-700 to-blue-500 px-5 py-3 text-sm font-semibold text-white transition hover:opacity-90 sm:px-6 lg:text-base xl:text-lg"
-  >
-    View My Work »
-  </Link>
+  {/* Photo */}
+  <img
+    src="/My.png"
+    alt="Pushkar Singh"
+    className="pointer-events-none absolute bottom-0 right-16 h-[90%] w-auto max-w-[40%] object-contain object-bottom lg:right-28 xl:right-40"
+  />
 
-  <a
-    href="mailto:pushkar-singh@zohomail.in"
-    className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-2xl border border-purple-500 px-5 py-3 text-sm font-semibold text-white transition hover:bg-purple-500/10 sm:px-6 lg:text-base xl:text-lg"
-  >
-    Contact Me
-    <FiMail className="size-4 lg:size-5" />
-  </a>
-</div>
-            {/* <div className="flex justify-center gap-5 pl-3 xl:w-[12vw] mt-2 lg:pl-7 xl:pr-14">
-              <a href="https:/wa.me/+916239799932"><FaWhatsapp className="md:size-4 xl:size-5"/></a>
-              <a href="https://linkedin.com/in/impushkar"><FaLinkedin className="size-5 md:size-4 xl:size-5"/></a>
-              <a href="https://github.com/impushkr"><FaGithub className="md:size-4 xl:size-5"/></a>
-            </div> */}
-          </div>
-        </div>
+  {/* Content */}
+  <div className="relative z-10 flex h-full min-h-[inherit] items-center px-6 py-10 lg:px-10 lg:py-14 xl:px-16">
+    <div className="flex max-w-[58%] flex-col items-start gap-3 lg:max-w-xl xl:max-w-2xl xl:gap-4">
+      <div className="inline-flex items-center gap-2 rounded-3xl border border-white/80 px-3 py-1 text-xs xl:text-sm">
+        <span className="h-2 w-2 rounded-full bg-green-500" />
+        <p>Frontend Developer</p>
+      </div>
+
+      <h1>
+        <span className="block text-3xl font-semibold lg:text-4xl xl:text-5xl">
+          Hi, I'm
+        </span>
+        <span className="block bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text pb-1 text-4xl font-bold leading-tight text-transparent lg:text-5xl xl:text-7xl">
+          Pushkar Singh
+        </span>
+      </h1>
+
+      <h2 className="text-base font-semibold xl:text-lg">
+        React.js Developer | Building Modern & Responsive Web Experiences
+      </h2>
+
+      <p className="text-xs text-gray-300 lg:text-sm xl:text-base">
+        I build responsive, user-friendly, and performant web applications
+        using React.js, Tailwind CSS and modern frontend technologies.
+      </p>
+
+      <div className="mt-2 flex flex-wrap items-center gap-3 sm:gap-4">
+        <Link
+          to="projects"
+          className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-2xl bg-gradient-to-r from-purple-700 to-blue-500 px-5 py-3 text-sm font-semibold text-white transition hover:opacity-90 sm:px-6 lg:text-base xl:text-lg"
+        >
+          View My Work »
+        </Link>
+
+        <a
+          href="mailto:pushkar-singh@zohomail.in"
+          className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-2xl border border-purple-500 px-5 py-3 text-sm font-semibold text-white transition hover:bg-purple-500/10 sm:px-6 lg:text-base xl:text-lg"
+        >
+          Contact Me
+          <FiMail className="size-4 lg:size-5" />
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
         
 
         {/*For Mobile  */}
