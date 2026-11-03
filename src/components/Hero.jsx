@@ -9,7 +9,7 @@ export default function Hero() {
     <>
       {/* For Desktop */}
       <section>
-        <div className="hidden md:block min-w-full md:h-[35vh] lg:h-[34vh] xl:h-[60vh] overflow-hidden relative mt-18 ">
+        <div className="hidden md:block min-w-full md:h-[30vh] lg:h-[34vh] xl:h-[65vh] overflow-hidden relative mt-18 ">
           <img
             src="/Hero.png"
             alt="Hero"
